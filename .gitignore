@@ -6,8 +6,6 @@ config.json
 
 # Personal CV data and uploaded files
 data/
-niyazi_can_cinkir_cv.json
-ilan.txt
 
 # Generated documents, reports, and logs
 output/
