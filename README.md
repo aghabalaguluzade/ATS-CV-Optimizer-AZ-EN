@@ -21,6 +21,7 @@ Bir çox şirkət CV-ləri ilkin mərhələdə Applicant Tracking System (ATS) a
 Layihə mövcud CV məlumatlarını təhlil edir, vakansiya mətnini əldə edir və uyğunlaşdırılmış CV sənədləri yaradır.
 
 ✨ Əsas imkanlar
+```
 🤖 Süni intellektlə optimallaşdırma: CV məzmununun vakansiyanın tələblərinə uyğunlaşdırılmasına kömək edir.
 🎯 Vakansiyaya uyğunlaşdırma: İş elanındakı tələbləri və əsas bacarıqları nəzərə alır.
 📄 PDF və DOCX ixracı: Nəticələri iki geniş istifadə olunan sənəd formatında yaradır.
@@ -28,7 +29,9 @@ Layihə mövcud CV məlumatlarını təhlil edir, vakansiya mətnini əldə edir
 🔎 Vakansiya məlumatlarının əldə edilməsi: İş elanı URL-indən məlumat toplamağa çalışır.
 🛠️ Alternativ vakansiya mətni: Avtomatik məlumat əldə etmək mümkün olmadıqda ilan.txt faylından istifadə edə bilər.
 📂 Nəticələrin təşkili: Yaradılmış fayllar ayrıca çıxış qovluğunda saxlanıla bilər.
+```
 🧰 İstifadə olunan texnologiyalar
+```
 Python
 Google Gemini API
 Streamlit
@@ -37,14 +40,16 @@ Beautiful Soup
 Jinja2
 PyPDF
 python-docx
+```
 ⚙️ Quraşdırma
+```
 1. Repozitorini klonlayın
 git clone https://github.com/aghabalaguluzade/ATS-CV-Optimizer-AZ-EN.git
 cd Ats-Cv-Optimizer
-
+```
 
 2. Virtual mühit yaradın
-
+```
 Windows:
 
 python -m venv .venv
@@ -59,13 +64,13 @@ source .venv/bin/activate
 3. Asılılıqları quraşdırın
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-
+```
 4. API açarını konfiqurasiya edin
 
-Google Gemini API açarı əldə edin və config.example.json faylını əsas götürərək config.json yaradın.
+Google Gemini API açarı əldə edin və ``config.example.json`` faylını əsas götürərək ``config.json`` yaradın.
 
 Nümunə konfiqurasiya:
-
+```
 {
   "GEMINI_API_KEY": "YOUR_GEMINI_API_KEY",
   "TARGET_JOB_URL": "https://example.com/job-posting",
@@ -74,7 +79,7 @@ Nümunə konfiqurasiya:
   "OUTPUT_PDF_PATH": "output/optimized_cv.pdf",
   "RAW_CV_PATH": "data/your_raw_cv.pdf"
 }
-
+```
 
 Fayl yollarını öz layihə strukturunuza uyğunlaşdırın. BASE_CV_PATH mövcud CV məlumatlarını saxlayan JSON faylına, RAW_CV_PATH isə ilkin PDF CV faylına işarə etməlidir.
 
@@ -86,7 +91,7 @@ Göstərilən fayl yollarının mövcud olduğuna əmin olun.
 
 Əsas proqramı işə salmaq üçün:
 
-python -m streamlit run dashboard.py 
+``python -m streamlit run dashboard.py``
 
 
 Proqram konfiqurasiya faylını oxuyur, CV və vakansiya məlumatlarını emal edir, AI vasitəsilə CV məzmununu optimallaşdırır və PDF/DOCX sənədlərini yaratmağa çalışır.
@@ -138,7 +143,7 @@ Bu layihəyə lisenziya əlavə ediləcəksə, burada müvafiq lisenziyanın ad�
 
 🇦🇿 Təşəkkür və mənbə
 
-Bu layihə Niyazi Cancinkir tərəfindən hazırlanmış Ats-Cv-Optimizer layihəsi əsasında hazırlanır.
+Bu layihə Niyazi Can ÇINKIR tərəfindən hazırlanmış Ats-Cv-Optimizer layihəsi əsasında hazırlanır.
 
 Orijinal layihə bu versiyanın əsasını təşkil edir. Bu repozitorinin məqsədi layihəni Azərbaycan və ingilis dilləri üçün uyğunlaşdırmaq, dil dəstəyini genişləndirmək və əlavə təkmilləşdirmələr etməkdir.
 
@@ -157,6 +162,7 @@ Many companies use Applicant Tracking Systems (ATS) to process job applications.
 It processes existing CV data, retrieves job description content, and generates tailored CV documents.
 
 ✨ Key Features
+```
 🤖 AI-powered optimization: Helps adapt CV content to a target job description.
 🎯 Job-specific tailoring: Uses relevant job requirements and skills to guide the optimization process.
 📄 PDF and DOCX export: Generates documents in two widely used formats.
@@ -164,7 +170,9 @@ It processes existing CV data, retrieves job description content, and generates 
 🔎 Job description retrieval: Attempts to retrieve content from a job posting URL.
 🛠️ Manual fallback: Supports loading job description text from ilan.txt when automatic retrieval fails.
 📂 Organized output: Saves generated documents using the configured output paths.
+```
 🧰 Tech Stack
+```
 Python
 Google Gemini API
 Streamlit
@@ -173,13 +181,15 @@ Beautiful Soup
 Jinja2
 PyPDF
 python-docx
+```
 ⚙️ Installation
+```
 1. Clone the repository
 git clone https://github.com/aghabalaguluzade/ATS-CV-Optimizer-AZ-EN.git
 cd Ats-Cv-Optimizer
-
+```
 2. Create a virtual environment
-
+```
 Windows:
 
 python -m venv .venv
@@ -194,13 +204,13 @@ source .venv/bin/activate
 3. Install dependencies
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-
+```
 4. Configure the API key
 
-Obtain a Google Gemini API key and create a config.json file based on config.example.json.
+Obtain a Google Gemini API key and create a ``config.json`` file based on ``config.example.json``.
 
 Example configuration:
-
+```
 {
   "GEMINI_API_KEY": "YOUR_GEMINI_API_KEY",
   "TARGET_JOB_URL": "https://example.com/job-posting",
@@ -209,7 +219,7 @@ Example configuration:
   "OUTPUT_PDF_PATH": "output/optimized_cv.pdf",
   "RAW_CV_PATH": "data/your_raw_cv.pdf"
 }
-
+```
 
 Update the file paths to match your local project structure. BASE_CV_PATH should point to your existing CV data in JSON format, while RAW_CV_PATH should point to your original PDF CV.
 
@@ -221,7 +231,7 @@ Verify that all configured file paths exist.
 
 Run the main application with:
 
-python -m streamlit run dashboard.py
+``python -m streamlit run dashboard.py``
 
 The application loads the configuration, processes the CV and job description, runs the AI optimization workflow, and attempts to generate the resulting PDF and DOCX files.
 
@@ -274,7 +284,7 @@ Built to make job applications more focused, clear, and effective.
 
 🙏 Credits & Acknowledgements
 
-This project is based on the original work by Niyazi Cancinkir in the Ats-Cv-Optimizer repository.
+This project is based on the original work by Niyazi Can ÇINKIR in the Ats-Cv-Optimizer repository.
 
 The original project served as the foundation for this version. This repository aims to extend and adapt the project with Azerbaijani and English language support, along with further improvements and customizations.
 
